@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7e6;
+    color: #4a4a4a;
+    background-image: url('https://i.pinimg.com/736x/b9/16/8e/b9168e57fa4f779cb54bc13bdb4784ba.jpg');
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+
+}
+
+h1 {
+    color: rgb(246, 245, 231);
+    font-size: 2.8em;
+}
+
+#products, #orderSummary, #payment {
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+button {
+    background-color: #b35400;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7b00;
+}

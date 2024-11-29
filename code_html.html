@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amma Chethi Ruchulu - అమ్మ చేతి రుచులు</title>
+    <link rel="stylesheet" href="code_css.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <p><img src="C:\Users\sheel\Downloads\Add a heading (1).png" width="150" height="150">
+            <h1><i>Amma Chethi Ruchulu - అమ్మ చేతి రుచులు</i></h1></p>
+        <p>Delicious homemade treats, straight from Amma's kitchen!</p>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Special Items</h2>
+
+        <!-- Bondhi Laddoo Section -->
+        <div class="product">
+            <img src="https://olivemithai.com/cdn/shop/files/Boondiladdu.jpg?v=1706362966" alt="Bondhi Laddoo">
+            <h3>Bondhi Laddoo</h3>
+            <p>Price: ₹400 per kg</p>
+            <button onclick="addItem('Bondhi Laddoo', 400)">Add to Order</button>
+        </div>
+
+        <!-- Add other items similarly -->
+        <div class="product">
+            <img src="https://i0.wp.com/aartimadan.com/wp-content/uploads/2019/10/Rava-ladoo-3.jpg?fit=750%2C421&ssl=1" alt="Ravva Laddoo">
+            <h3>Ravva Laddoo</h3>
+            <p>Price: ₹450 per kg</p>
+            <button onclick="addItem('Ravva Laddoo', 450)">Add to Order</button>
+        </div>
+        <div class="product">
+            <img src="https://5.imimg.com/data5/YV/TQ/KC/SELLER-82013128/ragi-ladoo-500x500.jpg" alt="Raghi Laddoo">
+            <h3>Raghi Laddoo</h3>
+            <p>Price: ₹500 per kg</p>
+            <button onclick="addItem('Raghi Laddoo', 500)">Add to Order</button>
+        </div>
+        <!-- Other items would be added in a similar way -->
+        <div class="product">
+            <img src="https://c1.staticflickr.com/6/5592/29759050984_5bebacddd9_b.jpg" alt="Murukulu">
+            <h3>Murukulu</h3>
+            <p>Price: ₹400 per kg</p>
+            <button onclick="addItem('Raghi Laddoo', 500)">Add to Order</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn.tarladalal.com/members/9306/procstepimgs/step-35_karapusa_-12-201893.jpg" alt="Murukulu">
+            <h3>Karapusa</h3>
+            <p>Price: ₹400 per kg</p>
+            <button onclick="addItem('Karapusa', 500)">Add to Order</button>
+        </div>
+    </section>
+
+    <!-- Order Summary Section -->
+    <section id="orderSummary">
+        <h2>Your Order</h2>
+        <div id="orderItems"></div>
+        <div id="totalCost"></div>
+        <button onclick="proceedToPayment()">Proceed to Payment</button>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" style="display:none;">
+        <h2>Enter Your Details</h2>
+        <form id="orderForm" onsubmit="sendOrder(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required><br>
+        
+            <label for="location">Location (Address):</label>
+            <input type="text" id="location" required placeholder="Enter your address (e.g., Banjara Hills, Hyderabad)"><br>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <script src="code_js.js"></script>
+</body>
+</html>
